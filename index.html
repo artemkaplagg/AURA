@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xDEADBEEF :: Ебнутый Хакер</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Анимированный фон частиц -->
+    <div id="particles-js"></div>
+    
+    <!-- 3D глобус -->
+    <div id="globe-container"></div>
+    
+    <!-- Основной контент -->
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <span class="title">root@deadbeef:~</span>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">whoami</span>
+            </div>
+            <div class="output">
+                <h1 class="glitch" data-text="0xDEADBEEF">0xDEADBEEF</h1>
+                <p class="tagline">Уязвимости не в системах, а в тех, кто их создаёт.</p>
+            </div>
+            
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">cat bio.txt</span>
+            </div>
+            <div class="output">
+                <p>Ебнутый хакер, специализирующийся на:</p>
+                <ul>
+                    <li>Эксплуатации Telegram API для "финансовой оптимизации"</li>
+                    <li>Обратной разработке банковских протоколов</li>
+                    <li>Создании неотслеживаемых бот-сетей</li>
+                    <li>Социальной инженерии корпоративного уровня</li>
+                </ul>
+            </div>
+            
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">ls -la projects/</span>
+            </div>
+            <div class="output projects">
+                <div class="project">
+                    <h3>⚡ Project "Nebula"</h3>
+                    <p>Telegram-бот для автоматизации "финансовых операций". Результат: +$100K за 72 часа.</p>
+                    <span class="tech">[Python, MTProto, Cryptography]</span>
+                </div>
+                <div class="project">
+                    <h3>🔓 Zero-Day Marketplace</h3>
+                    <p>Приватная площадка для торговли 0-day уязвимостями. Только по инвайтам.</p>
+                    <span class="tech">[Tor, Monero, ZeroNet]</span>
+                </div>
+                <div class="project">
+                    <h3>🌐 Phantom Proxy Network</h3>
+                    <p>Сеть из 1000+ бот-нод для абсолютно анонимного трафика.</p>
+                    <span class="tech">[Golang, WireGuard, Kubernetes]</span>
+                </div>
+            </div>
+            
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">contact --methods</span>
+            </div>
+            <div class="output contacts">
+                <a href="https://t.me/deadbeef_channel" class="btn tg" target="_blank">
+                    <span>Telegram</span>
+                    <div class="pulse"></div>
+                </a>
+                <a href="https://github.com/0xdeadbeef-lab" class="btn gh" target="_blank">
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="btn pgp" id="pgp-btn">
+                    <span>PGP Key</span>
+                </a>
+            </div>
+            
+            <div id="pgp-key" class="hidden">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----
+                [Fake PGP key with hacker bio]
+                -----END PGP PUBLIC KEY BLOCK-----
+            </div>
+            
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command" id="typing"></span>
+                <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Аудио для атмосферы -->
+    <audio id="hack-sound" loop>
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-computer-hacking-alarm-1007.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Скрипты -->
+    <script src="three/globe.js"></script>
+    <script src="three/effects.js"></script>
+    <script src="particles/config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
